@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Rationale: The Viewport tag tells mobile phones NOT to zoom out. Essential! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile</title>
+    
+    <!-- Rationale: This single line downloads all of Bulma's CSS rules to your page -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <!-- Rationale: .section adds top/bottom padding. .container centers everything nicely. -->
+     Hello Raiza !
+    <section class="section">
+        Hai Person !
+        <div class="container">
+            Hai hai hai Annie ! 
+            <!-- We will put our card here in Step 2! -->
+            <!-- Rationale: .box creates a white container with a shadow and rounded corners -->
+            <div class="box">
+                
+                <!-- Rationale: Bulma's typography classes automatically scale on mobile -->
+                <h1 class="title">Annie</h1>
+                <h2 class="subtitle is-7 has-text-info">Very squidful</h2>
+                
+                
+                <br>
+                
+                <!-- Rationale: .button creates a clickable area. .is-link colors it blue. -->
+                <!-- <a href="#" class="button is-link">Contact Me</a>
+
+                ● columns : Turns a container into a flexible grid.
+                ● is-mobile : Forces columns to stay side-by-side on tiny phone screens.
+                ● is-multiline : Allows columns to wrap to the next row when they run out of space.
+                ● is-half-mobile : Makes an item take up 50% (2 items per row) on phones.
+                ● is-one-quarter-desktop : Makes an item take up 25% (4 items per row) on laptops
+                -->
+
+                <h1 class="title">Aling Nena's Sari-Sari Store</h1>
+                <!-- TODO 1: Make this a grid that works on mobile and wraps to multiple lines -->
+                <div class="columns is-mobile is-multiline">
+                    <!-- Product 1 -->
+                    <!-- TODO 2: Make this column 50% wide on phones, and 25% wide on desktop -->
+                    <div class="column is-half-mobile is-one-quarter-desktop">
+                        <div class="box">
+                            <h3 class="title is-5">Skyflakes</h3>
+                            <p>₱8.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="column is-half-mobile is-one-quarter-desktop">
+                        <div class="box">
+                            <h3 class="title is-5">Lucky Me Pancit Canton</h3>
+                            <p>₱15.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="column is-half-mobile is-one-quarter-desktop">
+                        <div class="box">
+                            <h3 class="title is-5">Coca-Cola Mismo</h3>
+                            <p>₱20.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="column is-half-mobile is-one-quarter-desktop">
+                        <div class="box">
+                            <h3 class="title is-5">Choc Nut</h3>
+                            <p>₱2.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
