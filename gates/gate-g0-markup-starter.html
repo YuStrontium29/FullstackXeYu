@@ -3,12 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gate G0 — Barangay Profile (STARTER)</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Barangay E-Kittens</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 <body>
 
-  <!--
+    <header>
+      <div class = "box columns p-auto">
+        <h1 class="title has-text-cream">Barangay E-Kittens</h1> 
+        <img src="../images/appleImage.jpg" alt="Barangay San Juan Logo (trust)" width = 50px >
+      </div>
+    </header>
+
+    <nav class="pb-6">
+      <div class = "box columns">
+        <a href = "#about" class = "m-auto">About</a>
+        <a href = "#officials" class = "m-auto">Officials</a>
+        <a href = "#contact" class = "m-auto">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+
+      <section id = "about" class="pb-6">
+        <h1 class="title">About</h1>
+        <p>This is Barangay E-Kittens, where the E-Kittens reside. Meow meow. Yes.</p>
+      </section>
+
+      <section id = "officials" class = "columns">
+
+        <article class = "column is-one-third-desktop is-mobile">
+          <h1 class="title is-4 has-text-info">Barangay Captain</h1>
+          <img src="../images/Xian.jpeg" width=375px>
+        </article>
+        <article class = "column is-one-third-desktop is-mobile">
+          <h1 class="title is-4 has-text-info">Other guy</h1>
+          <img src="../images/Brentt.jpeg" width=375px>
+        </article>
+        <article class = "column is-one-third-desktop is-mobile">
+          <h1 class="title is-4 has-text-info">Kagawad</h1>
+          <img src="../images/Raiza.jpeg" width=375px>
+        </article>
+
+      </section>
+
+      <section id = "contact">
+
+        <h1 class="title is-4">COntact Us!!</h1>
+
+        <form>
+
+          <div class = "field">
+            <label class ="label" for="name">Whats ur name yeah</label>
+          </div>
+
+          <div class="control">
+            <input class = "input" type="text" id="name" placeholder="Full Name" required>
+          </div>
+
+          <div class = "field">
+            <label class ="label" for="name">Can u put ur email</label>
+          </div>
+
+          <div class="control">
+            <input class = "input" type="text" id="email" placeholder="Email" required>
+          </div>
+
+          <div class = "field">
+            <div class = "control">
+              <button class="button is-primary" type="reset">Submitty</button>
+            </div>
+          </div>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer >
+      <p class="footer">© 2026 Barangay E-Kittens</p>
+    </footer>
+  <!-- 
     ============================================================================
     GATE G0 · Markup & Responsive Layout · 30 minutes · NO AI · individual
     Build the page described by the wireframe, INSIDE this <body>.
@@ -46,11 +122,6 @@
   -->
 
   <!-- TODO: write the whole page below using semantic HTML + Bulma classes. -->
-
-        <header>
-          <h1>Barangay San Juan</h1>
-          <img src="../images/appleImage.jpg" alt="Barangay San Juan Logo (trust)" class="logo">
-        </header>
 
 
 </body>
