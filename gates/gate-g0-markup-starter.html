@@ -165,6 +165,78 @@
 
   </script>
 
+  <section class="section">
+    <div class="container" style="max-width: 640px;">
+      <h1 class="title is-4">📣 Barangay Complaint Box</h1>
+      <p class="subtitle is-6">
+        <strong>GATE G2 · DOM & Events</strong> · 30 minutes · NO AI · individual
+      </p>
+
+      <div class="message is-info is-light">
+        <div class="message-body">
+          Wire up the form in the script tag below. On submit, the entry must
+          appear at the <strong>top</strong> of the list, the form must clear, and the page
+          must <strong>not reload</strong>.
+        </div>
+      </div>
+
+      <!-- TODO: this form already has the id and input ids you need -->
+      <form id="complaint-form" class="box">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input id="name" class="input" type="text" placeholder="Juan dela Cruz" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Complaint / Request</label>
+          <div class="control">
+            <textarea id="complaint" class="textarea" placeholder="Pothole on Sampaguita Street" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="button is-primary">Submit</button>
+      </form>
+
+      <p class="mt-4">Total complaints logged: <strong id="count">0</strong></p>
+      <ul id="list" class="content"></ul>
+    </div>
+  </section>
+
+  <script>
+    // ============================================================
+    // TODO 1: Select the form, the list, and the count span by id.
+    // Hint: const form = document.getElementById('complaint-form');
+    // ============================================================
+    const form = document.getElementById('complaint-form'); 
+    const list = document.getElementById('list');
+    const countSpan = document.getElementById('count');
+
+    let count = 0;
+
+    form.addEventListener('submit', function (e) {
+
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const complaint = document.getElementById('complaint').value;
+
+      const li = document.createElement('li');
+      li.textContent = `${name}: ${complaint}`;
+      list.prepend(li);
+
+
+
+    form.reset();
+    bumpCount();
+    });
+
+    function bumpCount() {
+      count = count + 1;
+      countSpan.textContent = count;
+    }
+
+  </script>
+
       <section id = "contact">
 
         <h1 class="title is-4">COntact Us!!</h1>
